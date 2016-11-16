@@ -5,7 +5,7 @@ function Start-AppveyorInstallTask
     Start-Process -Wait -FilePath "git" -ArgumentList @(
         "clone",
         "-q",
-        "https://github.com/PowerShell/DscResource.Tests",
+        "https://github.com/kwirkykat/DscResource.Tests",
         (Join-Path -Path $env:APPVEYOR_BUILD_FOLDER `
                    -ChildPath "Modules\SharePointDsc\DscResource.Tests")
     )
